@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>step-tech-benchmark — PlayCanvas</title>
+    <style>
+      :root {
+        font-family: 'Segoe UI', system-ui, -apple-system, 'Roboto', sans-serif;
+      }
+      .badge {
+        position: fixed;
+        bottom: 16px;
+        right: 16px;
+        background: #000000cc;
+        backdrop-filter: blur(8px);
+        color: #ffffff;
+        padding: 8px 16px;
+        border-radius: 40px;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        border: 1px solid rgba(255,255,255,0.2);
+        pointer-events: auto;
+        font-family: inherit;
+      }
+      .badge a {
+        color: #8bbfff;
+        text-decoration: none;
+        font-weight: 600;
+        margin-left: 4px;
+      }
+      .badge a:hover {
+        text-decoration: underline;
+        color: #bbddff;
+      }
+      .badge .logo {
+        font-size: 18px;
+      }
+      .badge .engine-name {
+        background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+        padding: 2px 8px;
+        border-radius: 20px;
+        font-size: 11px;
+        font-weight: bold;
+        margin-left: 6px;
+      }
+      @media (max-width: 680px) {
+        .badge {
+          bottom: 10px;
+          right: 10px;
+          padding: 5px 12px;
+          font-size: 11px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
